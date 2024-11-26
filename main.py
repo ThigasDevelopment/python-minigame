@@ -105,7 +105,7 @@ def __display__ ():
             del game['bombs'][f'{ player['x'] }@{ player['y'] }']
             __display__ ()
         else:
-            player['direction'] = input ('\n\nProxima direcao (w, a, s, d):')
+            player['direction'] = input ('\n\nProxima direcao (w, a, s, d):').lower ()
             __move__ ()
     
     return True
