@@ -40,7 +40,7 @@ game = {
 def __init__ ():
     player['name'] = input ('Digite o seu nome: ')
 
-    if (player['name'] != '') and (player['name'] != ' '):
+    if (player['name'].strip ()):
         print (f'Ola { player['name'] } estamos iniciando o jogo, aguarde 3 segundos !')
 
         __bombs__ ()
@@ -113,7 +113,7 @@ def __display__ ():
 def __move__ ():
     direction = player['direction']
 
-    if (not game['allowedDirections'][direction]):
+    if (not direction in game['allowedDirections']):
         return False
     
     if (direction == 'w'):
