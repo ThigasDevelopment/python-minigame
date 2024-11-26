@@ -1,5 +1,7 @@
 # 🚩 Python bomb minigame.
 
+![preview](.github/preview.png)
+
 ## Description
 A simple game in Python where the character must not step on the bomb.
 
