@@ -38,9 +38,9 @@ game = {
 }
 
 def __init__ ():
-    player['name'] = input ('Digite o seu nome: ')
+    player['name'] = input ('Digite o seu nome: ').strip ()
 
-    if (player['name'].strip ()):
+    if (player['name']):
         print (f'Ola { player['name'] } estamos iniciando o jogo, aguarde 3 segundos !')
 
         __bombs__ ()
